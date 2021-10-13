@@ -81,16 +81,6 @@ ul {
   clip: rect(0 0 0 0);
 }
 
-.footer-contact-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-
-  color: var(--footer-text-color);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* ------------ШАПКА-------------- */
 
 .header {
@@ -442,12 +432,12 @@ ul {
 }
 
 /* ---------------КЛИЕНТЫ---------------- */
-.client-section {
+.client {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.client-title {
+.client__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -456,9 +446,7 @@ ul {
   text-align: center;
 }
 
-.client-list {
-  display: flex;
-
+.client__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -466,7 +454,11 @@ ul {
   align-items: center;
 }
 
-.client-item {
+.customers {
+  display: flex;
+}
+
+.customers__item {
   width: 170px;
   height: 90px;
 
@@ -474,11 +466,11 @@ ul {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-item:not(:last-child) {
+.customers__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-link {
+.customers__link {
   display: block;
 
   width: 170px;
@@ -493,18 +485,18 @@ ul {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover,
-.client-link:focus {
+.customers__link:hover,
+.customers__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.client-icon {
+.customers__icon {
   fill: currentColor;
 }
 
-.client-item:hover,
-.client-item:focus {
+.customers__item:hover,
+.customers__item:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -518,7 +510,7 @@ ul {
   background-color: var(--hero-background-color);
 }
 
-.footer-flex {
+.footer__flex {
   display: flex;
 
   margin: 0;
@@ -526,7 +518,42 @@ ul {
   list-style: none;
 }
 
-.footer-social-text {
+.footer__logo--white {
+  color: var(--white-text-color);
+}
+
+.footer-contact {
+  margin-top: 20px;
+}
+.footer-contact__address {
+  color: var(--white-text-color);
+}
+
+.footer-contact__item {
+  margin-top: 9px;
+}
+
+.footer-contact__link:hover,
+.footer-contact__link:focus {
+  color: var(--accent-color);
+}
+
+.footer-contact__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--footer-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-section {
+  margin-left: 80px;
+  width: 206px;
+}
+
+.social-section__text {
   padding: 20px 0px 10px 0px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -537,12 +564,9 @@ ul {
   color: var(--white-text-color);
 }
 
-.footer-social-flex {
-  margin-left: 80px;
-  width: 206px;
-}
 
-.footer-social-list {
+
+.footer-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -552,12 +576,12 @@ ul {
   list-style: none;
 }
 
-.footer-social-item {
+.footer-list__item {
   width: 44px;
   height: 44px;
 }
 
-.footer-social-link {
+.footer-list__link {
   display: block;
 
   width: 44px;
@@ -571,43 +595,25 @@ ul {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-list__link:hover,
+.footer-list__link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
 
-.footer-social-icon {
+.footer-list__icon {
   margin: 12px 0px 0px 12px;
   fill: currentColor;
 }
 
-.logo-white {
-  color: var(--white-text-color);
-}
 
-.footer-contact {
-  margin-top: 20px;
-}
-.footer-contact-link.address {
-  color: var(--white-text-color);
-}
-
-.footer-contact-item {
-  margin-top: 9px;
-}
-
-.footer-contact-link:hover,
-.footer-contact-link:focus {
-  color: var(--accent-color);
-}
 
 .footer-submit {
-  /* width: 570px; */
+  
   margin-left: 93px;
 }
 
-.footer-submit-text {
+.footer-submit__text {
   padding: 20px 0px 10px 0px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -618,7 +624,7 @@ ul {
   color: var(--white-text-color);
 }
 
-.footer-submit-input {
+.footer-submit__input {
   width: 358px;
   margin: 0;
   padding: 13px 16px;
@@ -629,14 +635,14 @@ ul {
   color: var(--white-text-color);
 }
 
-.footer-submit-input::placeholder {
+.footer-submit__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
 
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-submit-btn {
+.footer-submit__btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -662,7 +668,7 @@ ul {
   margin-left: 12px;
 }
 
-.footer-submit-btn::after {
+.footer-submit__btn::after {
   content: '';
   display: inline-block;
   width: 24px;
