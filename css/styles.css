@@ -68,16 +68,17 @@ ul {
   color: var(--primary-text-color);
 }
 
-.features-icon-fon {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 30px;
+.visually-hidden {
+  position: absolute;
 
-  background-color: var(--team-background-color);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .footer-contact-link {
@@ -96,22 +97,27 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
+.header__section {
+  display: flex;
+  align-items: center;
+}
+
 .header__nav {
   display: flex;
   align-items: center;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
+.header__logo {
+  margin-right: 93px;
 }
-.logo__black {
+
+.header__logo--black {
   color: var(--black-logo-color);
 }
 
-.nav__list {
+.nav {
   display: flex;
-  margin-left: 93px;
+  
 }
 
 .nav__item:not(:last-child) {
@@ -134,11 +140,11 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__link.current {
+.nav__link--current {
   color: var(--accent-color);
 }
 
-.nav__link.current::after { 
+.nav__link--current::after { 
   position: absolute;
 
   display: block;
@@ -153,7 +159,10 @@ ul {
 
 .header-contact {
   display: flex;
-  margin-left: auto;
+}
+
+.header-contack__list{
+   margin-left: auto;
 }
 
 .header-contact__item + .header-contact__item {
@@ -214,7 +223,7 @@ ul {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -228,7 +237,7 @@ ul {
   color: var(--white-text-color);
 }
 
-.hero-btn {
+.hero__btn {
   display: inline-block;
   min-width: 200px;
   border-radius: 4px;
@@ -251,46 +260,45 @@ ul {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--white-text-color);
   color: var(--accent-color);
 }
 
 /* ------------ПРЕИМУЩЕСТВА-------------- */
 
-.features-section {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
 }
 
 .features-list {
   display: flex;
 }
 
-.features-item:not(:last-child) {
+.features-list__item:not(:last-child) {
   margin-right: 30px;
   max-width: 270px;
 }
 
-.features-icon {
+.features-list__icon-fon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  background-color: var(--team-background-color);
+}
+
+.features-list__icon {
   align-items: center;
 }
 
-.features-title {
+.features-list__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -299,7 +307,7 @@ ul {
   text-transform: uppercase;
 }
 
-.features-text {
+.features-list__text {
   font-size: 14px;
   line-height: 1.71;
 
@@ -307,29 +315,27 @@ ul {
 }
 
 /* ------------СПИСОК ЗАНЯТИЙ-------------- */
-.work-section {
+.work {
   padding-bottom: 94px;
 }
 
-.section-title {
+.work__title {
   margin-bottom: 50px;
 }
 
 .work-list {
   display: flex;
-
 }
 
-.work-item {
+.work-list__item {
   position: relative;
-
 }
 
-.work-item:not(:last-child) {
+.work-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.work-text {
+.work-list__text {
   width: 100%;
   position: absolute;
   bottom: 0;

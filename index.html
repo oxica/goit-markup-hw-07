@@ -21,14 +21,14 @@
   <body>
     <!-- Шапка -->
     <header class="header">
-      <div class="container header__nav">
-        <nav class="nav">
-          <a class="logo link" href="./index.html"
-            >Web<span class="logo__black">Studio</span></a
+      <div class="container header__section">
+        <nav class="header__nav">
+          <a class="header__logo logo link" href="./index.html"
+            >Web<span class="header__logo--black">Studio</span></a
           >
-          <ul class="nav__list list">
+          <ul class="nav list">
             <li class="nav__item">
-              <a class="nav__link link current" href="./index.html"
+              <a class="nav__link link nav__link--current" href="./index.html"
                 >Студия</a
               >
             </li>
@@ -42,7 +42,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contact list">
+        <ul class="header-contact header-contack__list list">
           <li class="header-contact__item">
             <a class="header-contact__link link" href="mailto:info@devstudio.com"
               ><svg class="header-contact__icon" width="16" height="12">
@@ -66,63 +66,63 @@
     <main>
       <!-- Герой -->
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
       </section>
       <!-- Список преимуществ -->
-      <section class="features-section">
+      <section class="features">
         <div class="container">
           <!-- h2 Преимущества спрятать в css правильно -->
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="features-list list">
-            <li class="features-item">
-              <div class="features-icon-fon">
-                <svg class="features-icon" width="70" height="70">
+            <li class="features-list__item">
+              <div class="features-list__icon-fon">
+                <svg class="features-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
 
-              <h3 class="features-title">Внимание к деталям</h3>
-              <p class="features-text">
+              <h3 class="features-list__title">Внимание к деталям</h3>
+              <p class="features-list__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="features-item">
-              <div class="features-icon-fon">
-                <svg class="features-icon" width="70" height="70">
+            <li class="features-list__item">
+              <div class="features-list__icon-fon">
+                <svg class="features-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
 
-              <h3 class="features-title">Пунктуальность</h3>
-              <p class="features-text">
+              <h3 class="features-list__title">Пунктуальность</h3>
+              <p class="features-list__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="features-item">
-              <div class="features-icon-fon">
-                <svg class="features-icon" width="70" height="70">
+            <li class="features-list__item">
+              <div class="features-list__icon-fon">
+                <svg class="features-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
 
-              <h3 class="features-title">Планирование</h3>
-              <p class="features-text">
+              <h3 class="features-list__title">Планирование</h3>
+              <p class="features-list__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="features-item">
-              <div class="features-icon-fon">
-                <svg class="features-icon" width="70" height="70">
+            <li class="features-list__item">
+              <div class="features-list__icon-fon">
+                <svg class="features-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
 
-              <h3 class="features-title">Современные технологии</h3>
-              <p class="features-text">
+              <h3 class="features-list__title">Современные технологии</h3>
+              <p class="features-list__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -131,36 +131,36 @@
         </div>
       </section>
       <!-- Список занятий -->
-      <section class="work-section">
+      <section class="work">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="work__title section-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
-            <li class="work-item">
+            <li class="work-list__item">
               <img
                 src="./images/box1.jpg"
                 alt="сотрудник создает программу"
                 width="370"
                 height="294"
               />
-              <p class="work-text">Десктопные приложения</p>
+              <p class="work-list__text">Десктопные приложения</p>
             </li>
-            <li class="work-item">
+            <li class="work-list__item">
               <img
                 src="./images/box2.jpg"
                 alt="сотрудник создает мобильное приложение"
                 width="370"
                 height="294"
               />
-              <p class="work-text">Мобильные приложения</p>
+              <p class="work-list__text">Мобильные приложения</p>
             </li>
-            <li class="work-item">
+            <li class="work-list__item">
               <img
                 src="./images/box3.jpg"
                 alt="веб-дизайнер выбирает палитру"
                 width="370"
                 height="294"
               />
-              <p class="work-text">Дизайнерские решения</p>
+              <p class="work-list__text">Дизайнерские решения</p>
             </li>            
           </ul>
         </div>
