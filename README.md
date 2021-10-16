@@ -9,7 +9,7 @@
 
 ## Структура файлов проекта
 
-![Структура файлов проекта](./preview.png)
+![Структура файлов проекта](https://github.com/goitacademy/html-css-homework/blob/master/7-bem-sass/preview.png)
 
 ## Критерии приёма работы наставником
 
