@@ -5,17 +5,14 @@ body {
     color: var(--primary-text-color);
   }
   
-  /* убираем точки списков */
   .list {
     list-style: none;
   }
   
-  /* убираем подчеркивание ссылок */
   .link {
     text-decoration: none;
   }
   
-  /* глобальный сброс margin, padding */
   h1,
   h2,
   h3,
