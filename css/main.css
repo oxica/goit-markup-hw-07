@@ -1,5 +1,17 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --black-logo-color: #000000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --white-background-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   letter-spacing: 0.03em;
   background-color: var(--white-background-color);
   color: var(--primary-text-color);
@@ -42,7 +54,7 @@ ul {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -60,59 +72,6 @@ ul {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Regular.eot");
-  src: url("../fonts/Roboto/Roboto-Regular.eot");
-  src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Medium.eot");
-  src: url("../fonts/Roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Bold.eot");
-  src: url("../fonts/Roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Black.eot");
-  src: url("../fonts/Roboto/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Black.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Black.woff") format("woff"), url("../fonts/Roboto/Roboto-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway/Raleway-Bold.eot");
-  src: url("../fonts/Raleway/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Bold.ttf") format("truetype"), url("../fonts/Raleway/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway/Raleway-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-:root {
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
-  --white-text-color: #ffffff;
-  --accent-color: #2196f3;
-  --black-logo-color: #000000;
-  --footer-text-color: rgba(255, 255, 255, 0.6);
-  --white-background-color: #ffffff;
-  --hero-background-color: #2f303a;
-  --team-background-color: #f5f4fa;
 }
 
 .header {
@@ -247,7 +206,7 @@ ul {
   padding: 10px 32px;
   background-color: var(--accent-color);
   color: var(--white-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -681,7 +640,7 @@ ul {
   border-radius: 4px;
   border: 1px solid transparent;
   padding: 6px 22px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
